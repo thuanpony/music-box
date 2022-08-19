@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Box</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c25e424d1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Navbar  -->
+  <nav id='nav' class="navbar navbar-expand-lg bg-black navbar-dark">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="./assets/images/logo-main.png" id="img-dark" class="img-fluid" alt="" width="100px">
+          <img src="./assets/images/logo-main-dark.png" id="img-light" class="img-fluid none-active" alt="" width="100px">
+        </a>
+      
+        <div class="input-group w-25">
+          <input type="text" class="form-control input-text" placeholder="Tìm kiếm...">
+          <button class="btn btn-outline-secondary btn-lg" type="button"><i class="fa fa-search"></i></button>  
+        </div>
+        
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-5">
+            <li class="nav-item">
+              <a href="news.html" class="nav-link text-light fw-bold px-3">TIN TỨC</a>
+            </li>
+            <li class="nav-item">
+              <a href="ranking.html" class="nav-link text-light fw-bold px-3">BẢNG XẾP HẠNG</a>
+            </li>
+            <li class="nav-item">
+              <a href="playlist.html" class="nav-link text-light fw-bold px-3">PLAYLIST</a>
+            </li>
+            <li class="nav-item">
+              <a href="artists.html" class="nav-link text-light fw-bold px-3">NGHỆ SĨ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-check form-switch ms-auto mt-3 me-3">
+          <label class="form-check-label ms-2" for="lightSwitch">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-brightness-high"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+              />
+            </svg>
+          </label>
+          <input class="form-check-input" type="checkbox" id="lightSwitch" />
+        </div> 
+    </div>
+  </nav> 
+
+  <!-- News section -->
+  <section class="bg-dark text-light p-5">
+      <div class="container">
+        <div class="d-flex">
+          <div class="col-xl-7 col-lg-6 col-md-5">
+            <a href="">
+              <img class="img-fluid" src="./assets/images/news-p-1.jpg" alt="" >
+            </a>
+            <div class="py-3">
+              <a href="" class="news-title">
+                <h4><strong>Vì sao “Link” của Hoàng Thuỳ Linh được Pitchfork chấm 7,2 điểm?</strong></h4>
+              </a>
+            </div>
+            
+          </div>
+          <div class="row px-3">
+            <div class="row">
+              <div class="col">
+                <a href="">
+                  <img src="./assets/images/news-p-2.jpg" alt="" class="img-thumbnail">
+                </a>
+              </div>
+              <div class="col px-1 py-2">
+                <a href="#" class="news-title">Chi Pu, MONO, 16 Typh và GONZO… debut trên BXH 100 ca khúc Vpop ăn khách</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="">
+                  <img src="./assets/images/news-p-3.jpg" alt="" class="img-thumbnail">
+                </a>
+              </div>
+              <div class="col px-1 py-2">
+                <a href="#" class="news-title">9 ca khúc thuộc dự án “Hương Mùa Hè” đổ bộ BXH Top Vietnamese Songs</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="">
+                  <img src="./assets/images/news-p-4.jpg" alt="" class="img-thumbnail">
+                </a>
+              </div>
+              <div class="col px-1 py-2">
+                <a href="#" class="news-title">“Buồn Làm Chi Em Ơi” và “Nàng Thơ” đạt 100 triệu lượt xem trên Youtube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     
+  </section>
+
+  <!-- Chart section-->
+  <section class="bg-dark text-light pb-2">
+    <div class="container">
+      <div id="chart" class="chart-section bg-black p-4">
+        <div class="row chart-section-title">
+          <div class="col-10 pt-2">
+            <h2 class="fw-bold">TOP 10 VIETNAMESE SONGS</h2>
+          </div>
+          <div class="col-2">
+            <p class="fw-bold text-end">
+              WEEK OF
+              <br>
+              AUGUST 11, 2022
+            </p>
+          </div>
+        </div>
+        <div class="chart-list mx-1">
+          <div class="swiper card_slider">
+            <ul class="swiper-wrapper none-list-style my-5">
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-1.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>1</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>Bên Trên Tầng Lầu</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>Tăng Duy Tân</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">1</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">5</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-2.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>2</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>vaicaunoicokhiennguoithaydoi</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>GREY D x tlinh</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">1</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">7</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-3.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>3</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>Bắt Cóc Con Tim</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>Lou Hoàng</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">3</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">5</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-4.jpeg" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>4</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>Một Ngàn Nỗi Đau</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>Văn Mai Hương, Hứa Kim Tuyền</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">3</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">6</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-5.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>5</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>Ánh Sao Và Bầu Trời</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>T.R.I</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">1</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">31</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-6.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>6</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>Vì Mẹ Anh Bắt Chia Tay</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>Miu Lê x Karik x Châu Đăng Khoa</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">1</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">8</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-7.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>7</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>Đoạn Kết Mới</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>Hoàng Dũng</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">7</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">1</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-8.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>8</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>ThichThich</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>Phương Ly</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">8</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">2</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-9.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>9</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>Chìm Sâu</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>RPT MCK ft. Trung Trần</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">1</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">23</div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="song-img">
+                  <img class="img-fluid rounded-circle" src="./assets/images/chart-10.webp" alt="">
+                </div>
+                <div class="song-ranking">
+                  <span>10</span>
+                </div>
+                <div class="song-title-wrapper">
+                  <div class="song-title">
+                    <span>Lời Tạm Biệt Chưa Nói</span>
+                  </div>
+                  <div class="song-artist">
+                    <span>GREY D, Orange</span>
+                  </div>
+                </div>
+                <div class="song-stats">
+                  <div>
+                    <div class="song-stats-title">
+                      THỨ HẠNG
+                      <br>
+                      CAO NHẤT
+                    </div>
+                    <div class="song-stats-rank">10</div>
+                  </div>
+                  <div>
+                    <div class="song-stats-title">
+                      SỐ TUẦN
+                      <br>
+                      TRỤ LẠI
+                    </div>
+                    <div class="song-stats-rank">2</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Playlist section -->
+  <section class="bg-dark text-light pb-2 playlist">
+    <div class="container">
+      <h2  class="fw-bold p-4 text-center">CÓ THỂ BẠN MUỐN NGHE</h2>
+      <div class="row">
+        <div class="col col-md-2 col-sm-3">
+          <div class="d-flex flex-column mt-2">
+            <div class="card-img">
+              <a href="" class="">
+                <img class="rounded img-fluid" src="./assets/images/playlist-9.webp" alt="">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="" class="">
+                <h4 class="card-content-title">Chill Hits</h4>
+              </a>
+              <a href="" class="">
+                <h3 class="card-content-artists">Trịnh Thanh Bình, Kha, Bích Phương...</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-2 col-sm-3">
+          <div class="d-flex flex-column mt-2">
+            <div class="card-img">
+              <a href="" class="">
+                <img class="rounded img-fluid" src="./assets/images/playlist-5.webp" alt="">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="" class="">
+                <h4 class="card-content-title">Rap Việt Cực Chất</h4>
+              </a>
+              <a href="" class="">
+                <h3 class="card-content-artists">Lil Wuyn, Dế Choắt, Tage...</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-2 col-sm-3">
+          <div class="d-flex flex-column mt-2">
+            <div class="card-img">
+              <a href="" class="">
+                <img class="rounded img-fluid" src="./assets/images/playlist-8.webp" alt="">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="" class="">
+                <h4 class="card-content-title">Lofi Một Chút Thôi</h4>
+              </a>
+              <a href="" class="">
+                <h3 class="card-content-artists">Kai Đinh, Vicky Nhung, Kha...</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-2 col-sm-3">
+          <div class="d-flex flex-column mt-2">
+            <div class="card-img">
+              <a href="" class="">
+                <img class="rounded img-fluid" src="./assets/images/playlist-7.webp" alt="">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="" class="">
+                <h4 class="card-content-title">V-Pop: 100 Hits Thập Niên</h4>
+              </a>
+              <a href="" class="">
+                <h3 class="card-content-artists">Noo Phước Thịnh, Hương Tràm, ERIK...</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-2 col-sm-3">
+          <div class="d-flex flex-column mt-2">
+            <div class="card-img">
+              <a href="" class="">
+                <img class="rounded img-fluid" src="./assets/images/playlist-10.webp" alt="">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="" class="">
+                <h4 class="card-content-title">Giai Điệu V-Pop Tươi Vui</h4>
+              </a>
+              <a href="" class="">
+                <h3 class="card-content-artists">Hoàng Duyên, LyLy, AMEE...</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-2 col-sm-3">
+          <div class="d-flex flex-column mt-2">
+            <div class="card-img">
+              <a href="" class="">
+                <img class="rounded img-fluid" src="./assets/images/playlist-4.webp" alt="">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="" class="">
+                <h4 class="card-content-title">Cà phê quán quen</h4>
+              </a>
+              <a href="" class="">
+                <h3 class="card-content-artists">Hoàng Dũng, Grey D, Vũ...</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+      
+  </section>
+
+  <!-- New song section -->
+  <section class="bg-dark text-light pb-2 song">
+    <div class="container">
+      <h2 class="fw-bold p-4 text-center">MỚI PHÁT HÀNH</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-2">
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-1.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Một Thời Nhanh Như Một Ngày</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Doãn Hiếu, BMZ</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>1 ngày trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-2.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Quen</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Dương Hoàng Yến</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>1 ngày trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-3.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Ngồi Yên Anh Sang</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Isaac</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>3 ngày trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-4.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Bảo sao</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Rich choi, Gill</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>6 ngày trước</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-2">
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-5.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Tim Vỡ</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Dế Choắt</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>6 ngày trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-6.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Strip 'em Down</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>tlinh, 2Pillz</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>2 ngày trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-7.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Obsessed</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Rhosy</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>1 ngày trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-8.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Bite</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Jay Park</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>1 ngày trước</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-2">
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-9.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>YOU AGAINST</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Ruel</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>2 ngày trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-10.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Go Around</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Kane Brown</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>3 ngày trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-11.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Sunshine</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Tyga, Jhené Aiko, Pop Smoke</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>1 tuần trước</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex p-3">
+            <div class="song-thump">
+              <a href="">
+              <img class="rounded img-fluid" src="./assets/images/thump-song-12.webp" alt="" width="60px" >
+              </a>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="song-title">
+                <a href="" class="">
+                  <span>Beach House</span>
+                </a>
+              </div>
+              <div class="song-artists">
+                <a href="" class="">
+                  <span>Carly Rae Jepsent</span>
+                </a>
+              </div>
+              <div class="song-release-time">
+                <span>1 tuần trước</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artists section -->
+  <section class="bg-dark text-light pb-5">
+    <div class="container">
+      <h2 class="fw-bold p-4 text-center">NGHỆ SĨ NỔI BẬT</h2>
+        <div class="artists-list mx-1">
+          <div class="swiper card_slider">
+            <ul class="swiper-wrapper none-list-style my-4">
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-1.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Sơn Tùng M-TP</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-2.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Hoàng Dũng</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-3.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Đen</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-4.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Vũ</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-5.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>RPT MCK</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-6.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Grey D</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-7.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Low G</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-8.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Hoàng Thùy Linh</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-9.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Da Lab</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" >
+                <div class="artists-item">
+                  <div class="artist-img">
+                    <img class="img-fluid rounded-circle" src="./assets/images/artist-10.jpg" alt="">
+                  </div>
+                  <div class="artist-name">
+                    <span>Suni Hạ Linh</span>
+                  </div>
+                  <div class="artist-des">
+                    <span>Nghệ sĩ</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer id="footer" class="bg-black text-light pt-5 footer">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-4 col-lg-5">
+          <div class="row">
+            <div class="col-md-12 col-lg-8 mb-4">
+              <h2 class="footer-header">
+                <a href=""> MUSIC BOX</a>
+              </h2>
+              <p class="footer-des">
+                Một dự án website về âm nhạc được thiết kế bởi Lương Công Thuận để phục vụ cho môn Thiết kế web
+              </p>
+              <a href="" class="read-more">
+                read more
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-7">
+          <div class="row">
+            <div class="col-md-3 border-left">
+              <h2 class="footer-header">
+                KHÁM PHÁ
+              </h2>
+              <ul class="none-list-style footer-list-item">
+                <li><a href="">Bảng xếp hạng</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Playlist</a></li>
+                <li><a href="">Nghệ sĩ</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 border-left">
+              <h2 class="footer-header">
+                NGUỒN THAM KHẢO
+              </h2>
+              <ul class="none-list-style footer-list-item">
+                <li><a href="">Billboardvn</a></li>
+                <li><a href="">Zingmp3</a></li>
+                <li><a href="">Nhaccuatui</a></li>
+                <li><a href="">Spotify</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 border-left">
+              <h2 class="footer-header">
+                THÔNG TIN
+              </h2>
+              <ul class="none-list-style footer-list-item">
+                <li><a href="">Sitemap</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 border-left">
+              <h2 class="footer-header">
+                VỀ TÔI
+              </h2>
+              <ul class="none-list-style footer-list-item">
+                <li><a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                  Facebook
+                </a></li>
+                <li><a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                  Instagram
+                </a></li>
+                <li><a href="">
+                  <i class="fa-brands fa-github"></i>
+                  Github
+                </a></li>
+                <li><a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                  Youtube
+                </a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-12">
+          <p class="copyright text-center">
+            
+            Copyright ©2022 All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+  var swiper = new Swiper(".card_slider", {
+  slidesPerView: 5,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+      },
+});
+</script>       
+</body>       
+</html>
